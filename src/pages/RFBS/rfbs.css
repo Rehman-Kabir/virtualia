@@ -1,0 +1,116 @@
+.request .container{
+    margin-top: 32px;
+}
+.request .container h1{
+    font-size: 30px;
+}
+.request .container p{
+    margin-top: 32px;
+    max-width: 65%;
+}
+.container-request{
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.form-field{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.form-field span{
+    flex-basis: 15%;
+    display: block;
+    height: 100%;
+    font-size: 20px;
+    color: #FFFFFFCC;
+}
+.form-field .inp-field{
+    width: 85%;
+}
+.form-field .inp-field input{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 18px;
+    border: none;
+    outline: none;
+    border: 1px solid #00FFFF;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Orbitron';
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+.date-time-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.date-time-wrap .form-field{
+    justify-content: space-between;
+}
+.date-time-wrap .form-field .inp-field{
+    width: 70%;
+}
+.form-ml {
+    margin-left: 32px;
+}
+
+.form-btn{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.form-btn button{
+    font-size: 18px;
+    color: #ffffff;
+    padding: 18px 34px;
+   background: linear-gradient(96.28deg, #3EA75B 7.8%, #16AC33 54.96%);
+   border-radius: 18px;
+   text-align: center;
+}
+
+@media (max-width:768px){
+    .container-request{
+    padding-right:12px;
+    padding-left:12px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.request .container{
+    margin-top: 32px;
+    padding: 0px 12px;
+}
+}
+@media (max-width:680px){
+ .date-time-wrap{
+    flex-direction: column;
+}
+.date-time-wrap .form-field .inp-field{
+    width: 100%;
+}
+.form-ml{
+    margin-left: 0px;
+}
+.form-field{
+    display: block;
+}
+.form-field span{
+    flex-basis: 100%;
+    margin-bottom: 8px;
+}
+.form-field .inp-field{
+    width: 100%;
+}
+}
+@media (max-width:480px){
+.form-field{
+    margin-bottom: 32px;
+}
+.request .container p{
+    max-width: 100%;
+}
+}

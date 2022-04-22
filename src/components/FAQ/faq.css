@@ -1,0 +1,25 @@
+
+.accordion-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.accordion-title img{
+    transition: 0.25s ease-in-out;
+    position: relative;
+    top: 4px;
+}
+.cross{
+    transform: rotate(45deg);
+    transition: 0.25s ease-in-out;
+}
+.accordion-title{
+    border-top: 2px solid #ddd;
+    padding: 16px 0px;
+}
+
+.accordion-content{
+    padding-bottom: 20px;
+    transition: 0.25s;
+    color: #15AC33;
+}

@@ -1,0 +1,135 @@
+/* Hero Section */
+.main-homepage-bg{
+  background: url(../../assets/sec-bg.png);
+  background-position: center;
+  background-size: cover;
+  /* object-fit: cover; */
+  background-repeat: no-repeat;
+}
+.home-hero .container{
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.home-hero-wrap{
+  position: relative;
+}
+.home-hero-content ul{
+  margin-top: 16px;
+}
+.home-hero-content ul li{
+list-style-image: url(../../assets/list-style.png);
+line-height: 1.8;
+text-align: justify;
+color: #FFFFFFB2;
+}
+.home-hero-content {
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 55px 0px;
+}
+.home-hero-content h1{
+  font-size: 60px;
+  text-align: center;
+}
+.home-socials{
+  position: absolute;
+  top: 70px;
+  left: 16px;
+}
+.social-icon{
+  height: 50px;
+  width: 50px;
+  border: 2px solid #ffffff7c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.25s ease-in;
+  margin-top: 12px;
+}
+.social-icon:hover{
+  background: #ffffff15;
+  transition: 0.25s ease-in;
+}
+
+/* Work Container */
+.work{
+  padding: 0px 12px;
+}
+.work .container {
+  max-width: 1280px;
+  margin: 0px auto;
+  background: #000000B2;
+  padding: 32px 0px 0px 0px;
+  border-radius: 18px;
+}
+.work .container h1{
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+}
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px;
+  gap: 3%;
+}
+.work-wrap .work-img{
+  text-align: center;
+}
+.work-wrap .work-img h3{
+  margin-top: 24px;
+}
+.work-wrap p {
+margin-top: 24px;
+}
+
+
+/* Hero Section Media Queries*/
+@media (max-width:1030px){
+.home-socials{
+  display: none;
+}
+}
+@media (max-width:920px){
+ .home-hero-content h1{
+   font-size: 38px;
+ }
+ .home-hero-content{
+   padding: 50px 12px;
+ }
+ .home-hero-content ul{
+   padding: 0px 16px;
+   margin: 24px 16px 0px 16px;
+ }
+ .home-hero-content ul li{
+   text-align: start;
+   line-height: 1.3;
+   margin-bottom: 8px;
+ }
+}
+@media (max-width:440px){
+ .home-hero-content h1{
+   font-size: 28px;
+ }
+}
+
+/* Work Container Media Queries */
+@media (max-width:990px){
+  .work-grid {
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5%;
+}
+.work-wrap p {
+text-align: center;
+}
+}
+@media (max-width:660px){
+  .work-grid {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0%;
+}
+.work-wrap{
+  margin-bottom: 24px;
+}
+}

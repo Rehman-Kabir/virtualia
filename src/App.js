@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Homepage from './pages/Homepage/Homepage';
+import Marketplace from './pages/Marketplace/Marketplace';
+import ConnectWallet from './pages/ConnectWallet/ConnectWallet';
+import RFBS from './pages/RFBS/RFBS';
+import MQHA from './pages/MQHA/MQHA';
+import Avatar from './pages/Avatar/Avatar';
+import FBA from './pages/FBA/FBA';
+import Community from './pages/Community/Community';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" exact element={<Homepage/>} />
+      <Route path="/marketplace" exact element={<Marketplace/>} />
+      <Route path="/avatar" exact element={<Avatar/>} />
+      <Route path="/community" exact element={<Community/>} />
+      <Route path="/wallet" exact element={<ConnectWallet/>} />
+      <Route path="/request" exact element={<RFBS/>} />
+      <Route path="/upload" exact element={<MQHA/>} />
+      <Route path="/3davatar" exact element={<FBA/>} />
+		</Routes>   
+    </>
   );
 }
 

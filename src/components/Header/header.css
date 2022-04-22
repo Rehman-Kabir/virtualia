@@ -1,0 +1,117 @@
+header{
+  background: #000000;
+  padding: 8px 16px;
+}
+.header-bg{
+background: #03214A66;
+}
+header .container{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .navigation, .desk-hide{
+  display: flex;
+  align-items: center;
+}
+.navigation li {
+  margin-left: 24px;
+}
+.desk-hide{
+  display: none;
+}
+.desk-hide li{
+  margin-left: 12px;
+}
+.desk-hide li img{
+  width: 30px;
+  cursor: pointer;
+}
+.navigation li a{
+  color: #fff;
+}
+.navigation li a.active{
+  color: #3EA75B;
+}
+.navigation li a:hover{
+  color: #3EA75B;
+}
+.navigation li .wallet-btn, .desk-hide .wallet-btn 
+{
+  background: transparent;
+  display: inline-block;
+  background: transparent;
+  border-radius: 15px;
+  color: #ffffff;
+  border: 1px solid #3EA75B;
+  font-size: 16px;
+  padding: 7px 16px;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+.navigation li .wallet-btn:hover{
+  background: #3EA75B;
+  color: #ffffff;
+  transition: 0.25s ease-in-out;
+}
+/* Media Queries Header */
+@media  (max-width:870px){
+  header{
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+  }
+  header .container .navigation{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 16px 0px 16px 20px;
+    background-color: #000000;
+    z-index: 13;
+    transform: scaleZ(0);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+header .container .navigation .mob-hide{
+  display: none;
+}
+header .container .navigation li:not(:last-child){
+margin: 16px 0px;
+}
+  .desk-hide{
+    display: flex;
+  }
+}
+@media  (max-width:440px){
+ .logo a img{
+   width: 120px;
+ }
+ .desk-hide .wallet-btn {
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 7px 8px;
+}
+}
+@media  (max-width:370px){
+ .logo a img{
+   width: 100px;
+ }
+ .desk-hide .wallet-btn {
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 7px 8px;
+}
+}
+
+header .container .navigation.nav-active{
+  transform: scaleZ(1);
+  opacity: 1;
+}

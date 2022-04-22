@@ -1,0 +1,160 @@
+.t-d-avator .container{
+    padding: 55px 16px 0px 16px;
+}
+.t-d-avatar-sec-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
+.t-d-avatar-sec-head h1{
+    font-size: 30px;
+}
+.btn-wrap{
+    display: flex;
+    align-items: center;
+}
+.btn-wrap button{
+    margin-left: 16px;
+    background: #3C485D;
+    border-radius: 12px;
+    outline: 0;
+    color: white;
+    padding: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.btn-wrap button img{
+    margin-left: 7px;
+}
+.t-d-avatar-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 70px 0px 50px 0px;
+}
+.t-d-avatar-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+.modify-container{
+    padding: 55px 16px;
+    border-top: 2px solid #FFFFFF66;
+}
+.modify-container h1{
+    font-size: 30px;
+}
+.modify-grid{
+    padding: 32px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.assets-img-wrap{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2315AC33FF' stroke-width='4' stroke-dasharray='11%2c 21' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.assets-img-wrap div{
+    margin-right: 16px;
+}
+.wardrobe {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0px 32px 32px 32px;
+}
+.wardrobe div{
+    margin-top: 24px;
+}
+.avatar-full-img {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 24px;
+}
+.avatar-full-img img{
+    width: 100%;
+    max-width: 450px;
+}
+/* Media Queries 3D avatar*/
+
+@media (max-width:850px){
+    .t-d-avatar-grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media (max-width:799px){
+    .t-d-avatar-grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+.t-d-avatar-sec-head{
+    flex-direction: column;
+}
+.btn-wrap{
+    margin-top: 16px;
+}
+}
+@media (max-width:610px){
+    .t-d-avatar-grid{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 70px 0px 50px 0px;
+}
+.t-d-avatar-sec-head h1{
+    font-size: 24px;
+}
+.btn-wrap button{
+    padding: 12px;
+}
+}
+@media (max-width:480px){
+.t-d-avatar-wrap img{
+    max-width: 120px;
+}
+.t-d-avatar-sec-head h1{
+    font-size: 18px;
+    text-align: center;
+}
+}
+@media (max-width:370px){
+.btn-wrap button{
+    font-size: 12px;
+}
+}
+
+/* Media Queries Modify Container */
+@media (max-width:880px){
+    .modify-grid{
+    padding: 32px 0px;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar-full-img img{
+    width: 100%;
+    max-width: 300px;
+}
+}
+@media (max-width:580px){
+.wardrobe div img{
+    width: 100%;
+    max-width: 250px;
+}
+.eyes div img{
+width: 100%;
+max-width: 100px;
+}
+.base div img{
+width: 100%;
+max-width: 50px;
+}
+.avatar-full-img {
+    padding: 24px 0px;
+}
+.modify-grid {
+    padding: 32px 0px 0px 0px;
+}
+}

@@ -1,0 +1,456 @@
+.community-hero-bg{
+    background: url(../../assets/sec-bg.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.community-hero .container{
+    padding: 55px 16px 0px 16px;
+}
+.community-hero .container h1{
+    font-size: 30px;
+    line-height: 40px;
+    text-decoration: underline;
+    text-align: center;
+}
+.community-container{
+    padding: 32px 12px 0px 12px;
+    text-align: center;
+}
+.community-container p{
+    text-align: center;
+    color: #FFFFFFCC;
+}
+.community-main-img{
+    padding: 32px 0px;
+    margin: 32px 0px;
+}
+.community-main-img img{
+    width: 100%;
+}
+.community-container a{
+    background: linear-gradient(96.28deg, #3EA75B 7.8%, #16AC33 54.96%);
+    border-radius: 25px;
+    color: #ffffff;
+    padding: 12px 12px;
+}
+/* Media Hero Community */
+@media (max-width:480px){
+  .community-container a{
+      font-size: 10px;
+  } 
+  .community-hero .container h1{
+    font-size: 22px;
+    line-height: 28px;
+  } 
+  .community-container p {
+    font-size: 14px;
+}
+}
+/* Lottery Section */
+.lottery .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.lottery .container h1{
+    font-size: 47px;
+}
+.lottery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+    grid-column-gap: 4%;
+}
+.lottery-wrap{
+    background: #03214ACC;
+    padding: 16px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px 8px rgba(255, 255, 255, 0.25);
+}
+.lottery-img img{
+    width: 100%;
+}
+.lottery-img{
+    margin-bottom: 16px;
+}
+.lottery-data-inner{
+    margin-top: 16px;
+}
+.lottery-data p{
+    color: #8393AF;
+    line-height: 1.4;
+}
+.lottery-data p span{
+    color: #ffffff;
+}
+.lottery-cta {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0px 0px 0px;
+}
+.lottery-like{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.lottery-cta button{
+    flex-basis: 60%;
+    background: #15AC33;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* Events Section */
+.event .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.event .container h1{
+    font-size: 47px;
+}
+.event-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 28px;
+}
+.event-head a{
+    font-size: 32px;
+    line-height: 22px;
+    color: #15AC33;
+    text-decoration: underline;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3%;
+}
+.event-wrap{
+    background: #03214ACC;
+    border-radius: 18px;
+    display: flex;
+}
+.event-data {
+    /* padding: 24px 8px 0px 16px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.event-d-top {
+     padding: 24px 8px 0px 16px;
+}
+.event-d-top h3{
+    margin-bottom: 18px;
+}
+.event-d-top span{
+    display: inline-block;
+    margin-top: 24px;
+}
+.event-d-top p{
+    font-size: 12px;
+    line-height: 2.4;
+}
+
+/* Media Queries Events Section */
+@media (max-width:1080px){
+.event-grid {
+    display: flex;
+    grid-column-gap: 0%;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.event-wrap{
+    display: block;
+    flex-basis: 45%;
+}
+.event-img img{
+    width: 100%;
+}
+}
+@media (max-width:768px){
+    .event .container h1{
+    font-size: 28px;
+}
+.event-head a{
+    font-size: 14px;
+    line-height: 18px;
+}
+}
+@media (max-width:580px){
+.event-grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.event-wrap{
+    display: block;
+    max-width: 400px;
+    margin-bottom: 16px;
+}
+.event-img img{
+    width: 100%;
+    height: auto;
+}
+}
+
+/* Challenges Section */
+.challenges .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.challenges .container h1{
+    font-size: 47px;
+}
+.challenges-head {
+    max-width: 500px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.challenges-head span{
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.challenges-head span.active{
+    text-decoration: underline;
+    color: #15AC33;
+}
+.challenge-card{
+    background: #03214ACC;
+    
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px 8px rgba(255, 255, 255, 0.2);
+}
+.challenge-grid{
+    display: grid;
+    padding: 32px 0px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4%;
+}
+.challenge-card {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+.c-card img{
+    width: 100%;
+}
+.challenge-card-data {
+    padding: 12px 16px 38px 16px;
+}
+.challenge-card-data p span{
+    color: #ffffff;
+}
+.challenge-card-data p{
+    color: #8393AF;
+}
+.challenge-card-data .sub{
+    margin-top: 16px;
+    color: #15AC33;
+    margin-top: 16px;
+    display: inline-block;
+}
+.challenge-meta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid #00000033;
+    padding: 12px 0px;
+}
+.challenge-meta span{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.challenge-meta span img{
+    margin-right: 3px;
+}
+
+/* Media Queries Challenges Section */
+@media (max-width:480px){
+.challenge-meta span {
+    font-size: 10px;
+}
+}
+/* LeaderBoard Section */
+
+
+.leaderboard .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.leaderboard .container h1{
+    font-size: 47px;
+}
+.leaderboard-head {
+    max-width: 400px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.leaderboard-head span{
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.leaderboard-head span.active{
+    text-decoration: underline;
+    color: #15AC33;
+}
+.leaderboard-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+}
+.leaderboard-wrap{
+    background: #03214ACC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px;
+    padding: 16px 32px;
+    margin: 16px 0px;
+}
+.leader-profile-wrap {
+    display: flex;
+    align-items: center;
+}
+.leader-img {
+    margin-right: 12px;
+}
+.leader-data h3{
+    margin-bottom: 7px;
+}
+.leader-data span{
+    color: #8393AF;
+}
+
+/* Media Queries LeaderBoard Section */
+
+@media (max-width:790px){
+   .leaderboard-wrap{
+    padding: 16px 16px;
+}
+.leaderboard .container h1{
+    font-size: 37px;
+}
+.leaderboard-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0%;
+}
+}
+@media (max-width:480px){
+    .leaderboard .container h1{
+    font-size: 28px;
+}
+.leaderboard-head span{
+    font-size: 12px;
+}
+.leader-img img{
+    width: 100%;
+    max-width: 40px;
+}
+.leader-data h3{
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+.leader-data span{
+    font-size: 12px !important;
+}
+.leaderboard-wrap h3{
+    font-size: 16px; 
+}
+.leaderboard-wrap{
+    margin: 12px 0px;
+}
+}
+
+/* Blog Section */
+.blog .container{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+.blog .container h1{
+    font-size: 47px;
+}
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 55px 0px;
+}
+.blog-wrapper {
+    display: flex;
+    margin: 16px 0px;
+}
+
+.blog-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 0px 0px 32px;
+}
+.blog-data p{
+    line-height: 1.5;
+    opacity: 0.6;
+}
+.blog-data a{
+    color: #EF443B;
+}
+/*Media Queries Blog Section */
+@media (max-width:870px){
+.blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 55px 0px;
+}
+}
+@media (max-width:768px){
+    .blog .container h1{
+    font-size: 28px;
+}
+}
+@media (max-width:570px){
+.blog-grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 55px 0px;
+}
+.blog-img img{
+    width: 100%;
+}
+.blog-data {
+    padding: 0px 0px 0px 22px;
+}
+}
+@media (max-width:470px){
+    .blog-data {
+    padding: 0px 0px 0px 16px;
+}
+.blog-data p {
+    line-height: 1.3;
+    font-size: 14px;
+    opacity: 0.6;
+}
+.blog-grid {
+    margin: 20px 0px;
+}
+}

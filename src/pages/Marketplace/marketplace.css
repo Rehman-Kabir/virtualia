@@ -1,0 +1,9 @@
+.marketplace-bg{
+    background: url(../../assets/sec-bg.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+.marketplace-container{
+   padding: 55px 0px 0px 0px;
+   background: #00000067;
+}

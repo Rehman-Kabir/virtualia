@@ -1,0 +1,120 @@
+.avatar-bg-container{
+    background: url(../../assets/sec-bg.png);
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+/* .avatar{
+    padding: 55px 0px;
+} */
+.avatar-content-container{
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto;
+    padding-top: 55px;
+}
+.avatar-content-container h1{
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.avatar-content-text{
+    margin-top: 70px;
+    margin-bottom: 24px;
+}
+.avatar-content-text p{
+    color: #FFFFFFCC;
+    line-height: 24px;
+}
+.avatar-main-container{
+    background-color: #03214A33;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+}
+.avatar-grid{
+    display: flex;
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+.avatar-wrap{
+    max-width: 245px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.avatar-wrap .a-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar-wrap .a-text{
+    background-color: #15AC33;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 16px;
+    border-radius: 0px 0px 8px 8px;
+}
+.avatar-wrap .a-text p{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.avatar-heading h1{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
+/* FAQ */
+
+.faq .container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.accordion{
+     border-bottom: 2px solid #ddd;
+}
+.accordion-container{
+    margin: 40px 0px 70px 0px;
+}
+
+@media (max-width:1100px){
+    .avatar .container{
+        padding: 0px 12px;
+    }
+    .faq .container{
+        padding: 0px 12px;
+    }
+}
+@media (max-width:550px){
+    .avatar-main-container{
+        padding: 0 12px;
+    }
+    .avatar-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar-wrap{
+        margin-bottom: 24px;
+    }
+    .avatar-heading h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+}
+@media (max-width:450px){
+    .avatar-grid{
+        padding: 50px 0px;
+    }
+    .avatar-heading h1{
+    font-size: 28px;
+    line-height: 35px;
+}
+}
